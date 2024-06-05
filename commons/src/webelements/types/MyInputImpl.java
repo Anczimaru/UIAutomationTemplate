@@ -1,6 +1,5 @@
 package webelements.types;
 
-import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebElement;
 
 import static org.openqa.selenium.Keys.BACK_SPACE;
@@ -33,6 +32,11 @@ public class MyInputImpl extends MyElementImpl implements MyInput {
 
     @Override
     public String typeRandomText() {
-        return RandomStringUtils.randomAlphabetic(15);
+        return "sth";
+    }
+
+    @Override
+    public String getText(){
+        return element.getText();
     }
 }
